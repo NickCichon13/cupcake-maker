@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/cupcake.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+    crossorigin="anonymous">
+    <title>🧁</title>
+</head>
+<body>
+    <h2 class="heading">🧁🧁🧁🧁🧁🧁🧁🧁🧁🧁🧁🧁🧁🧁</h2>
+    <h1 class="hd">List of All Of The Cupcakes!</h1>
+    
+    <ul class="list-cupcakes">
+
+    </ul>
+    
+<h1 class="heading">Create A Cupcake Of Your Liking!</h1>
+
+
+<form class="add-cupcake" action="/api/cupcake/create" method="POST">
+<label>FLAVOR</label> <br>
+<input type="text" name="flavor" placeholder="flavor"><br>
+
+<label>RATING</label> <br>
+<input type="number" min="1" max="10" name="rating" placeholder="rating"><br>
+
+<label>SIZE</label> <br>
+<input type="number" min="1" max="5" name="size" placeholder="size"><br>
+
+<label>IMAGE</label> <br>
+<input type="text" name="image" placeholder="image"><br>
+
+</form>
+<h2 class="heading">🧁🧁🧁🧁🧁🧁🧁🧁🧁🧁🧁🧁🧁🧁</h2>
+
+<a href="/">
+<button class="submit-cupcake">
+    Submit Your Cupcake!
+</button>
+</a>
+<script src="static/cupcake.js"></script>
+</body>
+</html>
